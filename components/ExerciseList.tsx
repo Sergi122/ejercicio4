@@ -3,7 +3,7 @@ import { ExerciseListProps } from '@/types/exercise';
 import { ExerciseCard } from './ExerciseCard';
 import { ExerciseHeader } from './ExerciseHeader';
 
-export const ExerciseList = ({ exercises }: ExerciseListProps) => {
+export function ExerciseList({ exercises }: ExerciseListProps) {
   return (
     <div className="max-w-[526px] mx-auto px-4 py-6">
       <ExerciseHeader totalExercises={exercises.length} />
@@ -15,4 +15,4 @@ export const ExerciseList = ({ exercises }: ExerciseListProps) => {
       </div>
     </div>
   );
-};
+}
